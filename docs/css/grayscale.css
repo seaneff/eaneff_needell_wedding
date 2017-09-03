@@ -36,12 +36,33 @@ h6 {
 p {
   font-size: 16px;
   line-height: 1.5;
-  margin: 0 0 25px; }
+  margin: 0 0 25px;
+  &::before {
+    top: 0;
+    left: 16px;
+    color: #fff;
+    content: '“';
+    font-size: 3em;
+    position: absolute;
+    text-shadow: -3px 0 #c2c2c2;
+  }
+  &::after {
+    right: 16px;
+    color: #fff;
+    content: '”';
+    bottom: -32px;
+    font-size: 3em;
+    position: absolute;
+    text-shadow: 3px 0 #c2c2c2;
+  }
+}
+
   @media (min-width: 768px) {
     p {
       font-size: 18px;
       line-height: 1.6;
-      margin: 0 0 35px; } }
+      margin: 0 0 35px; }
+  }
 
 a {
   -webkit-transition: all 0.2s ease-in-out;
@@ -208,7 +229,9 @@ ul.banner-social-buttons {
         margin-bottom: 0; } }
 
 footer {
-  padding: 50px 0; }
+  padding: 10px 10px;
+  margin-left: 50px;
+  margin-right: 50px;}
   footer p {
     font-size: 14px;
     margin: 0; }
@@ -230,4 +253,38 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2); }
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+
+blockquote {
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em 10em 0.5em 10em;
+}
+blockquote:before {
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: 6em;
+    line-height: 1;
+    top: -.075em;
+    left: 0.75em;
+    content: "\201C";
+}
+
+blockquote:after {
+    font-family: Georgia, serif;
+    position: absolute;
+    float:right;
+    font-size:6em;
+    line-height: 1;
+    right: 0.85em;
+    bottom: 0em;
+    content: "\201D";
+}
+blockquote footer {
+    padding: 0.5em 0 0.5em 0;
+    text-align:center;
+}
+blockquote cite:before {
+    content: "\2013";
+}
