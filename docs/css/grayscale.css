@@ -172,9 +172,9 @@ a {
     background: rgba(255, 255, 255, 0.1); }
 
 .content-section {
-  color:white;
-  background:#1c332b;
-  padding-top: 150px;
+  color: white;
+  background: #1c332b;
+  padding-top: 100px;
   padding-bottom: 150px; }
 
 .wedding-section {
@@ -191,10 +191,9 @@ a {
 
 @media (min-width: 992px) {
   .content-section {
-    padding-top: 200px;
+    padding-top: 150px;
     padding-bottom: 200px; }
-  #map {
-    height: 350px; } }
+ }
 
 .btn {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
