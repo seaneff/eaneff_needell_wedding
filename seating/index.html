@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>D3 CSV Upload</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<p>
+  Try uploading a CSV file, such as <a href="sample_input.csv">sample_input.csv</a><br/>
+  This page uses <a href="https://developer.mozilla.org/en-US/docs/DOM/FileReader">FileReader</a>
+  and <a href="http://d3js.org/">d3</a> to render the table.
+</p>
+<input type="file" id="uploader">
+<p id="stats">
+</p>
+<table id="table">
+
+</table>
+<script src="http://d3js.org/d3.v4.js"></script>
+<script src="js/main.js"></script>
+<script>
+upload_button("uploader", load_dataset);
+</script>
+</body>
+</html>
