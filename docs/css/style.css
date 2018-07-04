@@ -97,7 +97,7 @@ a {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #42DCA3;}
+  color: #94c5b3;}
   a:focus, a:hover {
     text-decoration: none;
     color: #1d9b6c; }
@@ -215,6 +215,13 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.schedule-section {
+  color: white;
+  background: #3C627A;
+  padding-top: 60px;
+  padding-bottom: 100px;
 }
 
 
